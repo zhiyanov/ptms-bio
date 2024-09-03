@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[
+    a4paper,
+    bindingoffset=1cm,
+    left=1cm,
+    right=1.5cm,
+    top=2cm,
+    bottom=2cm,
+    footskip=1cm
+]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+
+% colors package
+\usepackage{xcolor}
+
+\DeclareMathOperator\PP{\mathbb{P}}
+\DeclareMathOperator\EE{\mathbb{E}}
+\DeclareMathOperator\DD{\mathbb{D}}
+\DeclareMathOperator\II{\mathbb{I}}
+\DeclareMathOperator\FF{\mathcal{F}}
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{statement}{Утверждение}
+\newtheorem{lemma}{Лемма}
+\newtheorem{definition}{Определение}
+\newtheorem{notification}{Замечание}
+\newtheorem{question}{Вопрос}
+\newtheorem{example}{Пример}
+\newtheorem{problem}{Задача}
+\newtheorem{hproblem}{Задача}
+\newtheorem{fproblem}{Задача}
+
+\newcommand{\todo}[1]{{\color{red}[TODO: #1]}}
+\newcommand{\remark}[1]{{\color{blue}[REMARK: #1]}}
+
+
+\title{Семинар 1. Комбинаторика. Классическое вероятностное пространство.}
+% \author{}
+% \date{}
+\date{\vspace{-1cm}}
+
+\begin{document}
+\maketitle
+
+\section*{Бонусные задачи}
+\begin{fproblem}
+    Два игрока играют в безобидную игру (т.е. шансы на выигрыш одинаковы) и они договорились, что тот, кто первым выиграет $6$ партий, получит весь приз.
+    Но игра остановилась, когда первый игрок выиграл $4$ партии, а второй –- $3$.
+    Как справедливо разделить приз?
+    Опишите вероятностное пространство.
+\end{fproblem}
+
+\begin{fproblem}
+    Из совокупности всех подмножеств множества $\{1, 2, \ldots, N \}$ по схеме выбора с возвращением выбираются множества $A_1, A_2, \ldots, A_n$.
+    Найти вероятность события $\{A_1 A_2 \cdots A_n = \emptyset\}$.
+\end{fproblem}
+
+\begin{fproblem}
+    Из множества монотоных последовательностей длины $n$, составленных из чисел $1, 2, \ldots, N$, случайны образом выбирается одна.
+    Найти вероятность того, что она строго монотонна.
+\end{fproblem}
+\end{document}

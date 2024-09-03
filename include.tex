@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+
+%%%% Geometry
+\usepackage[
+    a4paper,
+    bindingoffset=1cm,
+    left=1cm,
+    right=1.5cm,
+    top=2cm,
+    bottom=2cm,
+    footskip=1cm
+]{geometry}
+
+%%%% Standard Packages
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage[noend]{algpseudocode}%
+\usepackage{listings}%
+
+%%%% Additional Packages
+\usepackage{mathtools}%
+\usepackage{enumitem}%
+\usepackage{xcolor}%
+\usepackage[utf8]{inputenc}%
+\usepackage[T2A]{fontenc}%
+\usepackage[unicode, pdftex]{hyperref}%
+\usepackage{hyphenat}%
+\usepackage[russian, english]{babel}%
+
+%%%% Graphix
+\usepackage[font=small]{caption}%
+\usepackage[labelformat=empty, position=top]{subcaption}%
+\usepackage[export]{adjustbox}%
+\usepackage{placeins}%
+
+%%%% Commands
+\newcommand{\todo}[1]{{\color{red}[TODO: #1]}}%
+\newcommand{\red}[1]{{\color{red}#1}}%
+\newcommand{\green}[1]{{\color{green}#1}}%
+\newcommand{\bin}[2]{{C_{#1}^{#2}}}%
+
+%%%% Operators
+\DeclareMathOperator\PP{\mathbb{P}}%
+\DeclareMathOperator\EE{\mathbb{E}}%
+\DeclareMathOperator\DD{\mathbb{D}}%
+\DeclareMathOperator\II{\mathbb{I}}%
+\DeclareMathOperator\FF{\mathcal{F}}%
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
+%%%% Environments
+\newtheorem{theorem}{Теорема}
+\newtheorem{statement}{Утверждение}
+\newtheorem{lemma}{Лемма}
+\newtheorem{definition}{Определение}
+\newtheorem{notification}{Замечание}
+\newtheorem{question}{Вопрос}
+\newtheorem{example}{Пример}
+\newtheorem{problem}{Задача}

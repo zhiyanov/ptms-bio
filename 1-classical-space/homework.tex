@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage[
+    a4paper,
+    bindingoffset=1cm,
+    left=1cm,
+    right=1.5cm,
+    top=2cm,
+    bottom=2cm,
+    footskip=1cm
+]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+
+% colors package
+\usepackage{xcolor}
+
+\DeclareMathOperator\PP{\mathbb{P}}
+\DeclareMathOperator\EE{\mathbb{E}}
+\DeclareMathOperator\DD{\mathbb{D}}
+\DeclareMathOperator\II{\mathbb{I}}
+\DeclareMathOperator\FF{\mathcal{F}}
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{statement}{Утверждение}
+\newtheorem{lemma}{Лемма}
+\newtheorem{definition}{Определение}
+\newtheorem{notification}{Замечание}
+\newtheorem{question}{Вопрос}
+\newtheorem{example}{Пример}
+\newtheorem{problem}{Задача}
+
+\newcommand{\todo}[1]{{\color{red}[TODO: #1]}}
+\newcommand{\remark}[1]{{\color{blue}[REMARK: #1]}}
+
+
+\title{Семинар 1. Комбинаторика. Классическое вероятностное пространство.}
+% \author{}
+% \date{}
+\date{\vspace{-1cm}}
+
+\begin{document}
+\maketitle
+
+\section*{Домашнее задание}
+\begin{problem}
+    Известно, что $\PP(A) = 0.8,\ \PP(AB) = 0.3,\ \PP(B) = 0.5$.
+    Какое из событий $A \setminus B,\ B \setminus A$ более вероятно?
+\end{problem}
+
+\begin{problem}
+    Известно, что $\PP(A) = 3 / 4,\ \PP(B) = 1 / 3$.
+    Показать, что $5 / 12 \leq \PP(A \setminus B) \leq 8 / 12$.
+\end{problem}
+
+\begin{problem}
+    Найти вероятности того, что при броске 10 игральных кубиков выпало хотя бы 2 шестерки.
+\end{problem}
+
+\begin{problem}
+    Сколько способов покрасить 12 различных комнат, чтобы было 2 зеленых, 8 красных и 2 синих?
+\end{problem}
+
+\begin{problem}
+    $N$ человек рассаживаются в ряд в случайном порядке.
+    Найти вероятность того, что между двумя определенными лицами окажется ровно $k$ человек.
+    А если люди рассаживаются за круглый стол?
+\end{problem}
+
+% \begin{problem}
+%     За круглый стол в случайном порядке рассаживаются $n$ мужчин $n$ женщин.
+%     Какова вероятность того, что их можно разбить на $n$ непересекающихся пар разнополых соседей?
+% \end{problem}
+% 
+% \begin{problem}
+%     В первом ряду кинотеатра, состоящем из $N$ мест случайным образом рассаживаются $n$ человек.
+%     Найти вероятность того, что каждый из них имеет ровно одного соседа.
+% \end{problem}
+
+\end{document}
+
+
